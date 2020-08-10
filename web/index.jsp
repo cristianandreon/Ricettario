@@ -19,7 +19,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
-        <title>Rigoni Asiago</title>
+        <title>Ricettario</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
         <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
@@ -46,7 +46,7 @@
 
             //
             // imposta la cartella di lavoro dei file json
-            workspace.set_project_folder(request, "Z:\\home\\ubuntu\\RigoniAsiago\\web\\liquidJSONs", GenesisToken);
+            workspace.set_project_folder(request, "Z:\\home\\ubuntu\\Ricettario\\web\\liquidJSONs", GenesisToken);
             
             // Black list
             // workspace.addToBlackList("*","*","cfg");
@@ -128,7 +128,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Rigoni di Asiago AR - Dashboard</title>
+    <title>Ricettario</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -161,7 +161,7 @@
         <div>
           <img src="img/squirrel.png"/>
         </div>
-        <div class="sidebar-brand-text mx-3">Rigoni di Asiago</div>
+        <div class="sidebar-brand-text mx-3">Ricettario</div>
       </a>
 
       <!-- Divider -->
@@ -292,7 +292,7 @@
                 <!-- Nav Item - User Information -->
                 <li class="nav-item dropdown no-arrow">
                   <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Rigoni di Asiago - Admin</span>
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Ricettario - Admin</span>
                     <!--<img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">>--
                   </a>
                   <!-- Dropdown - User Information -->
