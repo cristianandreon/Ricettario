@@ -1,0 +1,53 @@
+{    "build_comment":"create by liquid v. 1.16"
+    ,"database":"rigoni"
+    ,"table":"contiene"
+    ,"primaryKey":"id"
+    ,"columns":[
+         { "name":"id", "visible":true }
+        ,{ "name":"idRicetta","label":"idRicetta","width":"!auto","required":true }
+        ,{ "name":"idIngrediente","label":"idIngrediente","width":"!auto","required":true }
+        ,{ "name":"ingrediente.nomeIngrediente","label":"Nome ingrediente", "foreignTable":"ingrediente", "foreignColumn":"id", "column":"idIngrediente" 
+            ,"lookup":"ingrediente"
+            ,"options":{
+                "lookupField":"nomeIngrediente"
+                ,"targetColumn":"ingrediente.nomeIngrediente"
+                ,"idColumn":"idIngrediente"
+                ,"commandBarVisible":false,"navVisible":false, "autoSelect":false
+                ,"status":"closed","width":"250px","height":"200"
+                ,"columns":[ "nomeIngrediente" ]
+            }
+        }
+        ,{ "name":"quantita","label":"quantita","width":"!auto","required":true}
+        ]
+    ,"layouts":[
+        {    "name":"dettaglioRicetta"
+            ,"source":"url(./layouts/dettaglioRicetta.html)"
+            ,"sourceForInsert":"url(./layouts/nuovoDettaglioRicetta.html)"
+            ,"nRows":-1
+            ,"overflow":"auto"
+            ,"rowPadding":4
+            ,"tabVisible":true
+            ,"backgroundColor":"white"
+        }
+        ]        
+    ,"commands":[
+        { "name":"insert" }
+        ,{ "name":"update"}
+        ,{ "name":"delete" }
+        ,{ "name":"copy" }
+        ,{ "name":"paste" }
+        ,{ "name":"next" }
+        ,{ "name":"previous" }
+        ]
+    ,"events":[]
+    ,"editable":true
+    ,"caption":"dettaglio ricette"
+    ,"autoFitColumns":true
+    ,"mode":"winX"
+    ,"top":"10px"
+    ,"left":"10px"
+    ,"askForSave":true
+    ,"width":"615px"
+    ,"resize":"both"
+    ,"height":"355px"
+}

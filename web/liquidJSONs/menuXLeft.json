@@ -1,0 +1,29 @@
+{ 
+ "name":"leftMenu"
+,"tooltip":"Rigoni di Asiago"
+,"type":"left"
+,"width":"200px"
+,"height":"100%"
+,"resize":true
+,"caption":"Rigoni di Asiago"
+,"accordions": [
+    {   
+        "sections":[
+            { "name":"Categorie"
+                ,"commands":[
+                     { "name":"ricette", "server":"", "params":[], "client":"Liquid.startWinX('ricette',glRicetteJSON)" }
+                    ,{ "name":"ingredienti", "server":"", "params":[], "client":"Liquid.startWinX('ingredienti',glIngredientiJSON)" }
+                    ,{ "name":"dettaglio ricette", "server":"", "params":[], "client":"Liquid.startWinX('dettaglioRicette',glDettaglioRicetteJSON)" }
+                ]
+            }
+            ,{ "name":"Sostenibilit&agrave;"
+                ,"commands":[
+                ]
+            }
+        ]
+    }
+]
+,"commandsOrder":"?berore"
+,"commands":[
+]
+}

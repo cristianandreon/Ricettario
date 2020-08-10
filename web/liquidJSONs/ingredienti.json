@@ -1,0 +1,29 @@
+{    "build_comment":"create by liquid v. 1.16"
+    ,"database":"rigoni"
+    ,"table":"ingrediente"
+    ,"columns":[
+        { "name":"id","label":"id","width":"!auto","remarks":"" }
+        ,{ "name":"nomeIngrediente","label":"nomeIngrediente","requiredByDB":true,"width":"!auto","required":true,"remarks":"" }
+        ]
+    ,"commands":[
+        { "name":"insert","rollback":"Annulla","server":"com.liquid.event.insertRow","img":"add.png","size":20,"rollbackImg":"cancel.png","text":"Aggiungi","isNative":true,"labels":["Salva"] }
+        ,{ "name":"update","rollback":"Annulla","server":"com.liquid.event.updateRow","img":"update.png","size":20,"rollbackImg":"cancel.png","text":"Modifica","isNative":true,"labels":["Salva"] }
+        ,{ "name":"delete","rollback":"Annulla","server":"com.liquid.event.deleteRow","img":"delete.png","size":20,"rollbackImg":"cancel.png","text":"Cancella","isNative":true,"labels":["Conferma"] }
+        ,{ "name":"copy","img":"copy.png","size":16,"client":"onCopy","isNative":true }
+        ,{ "name":"paste","img":"paste.png","size":16,"client":"onPaste","sync":true,"isNative":true }
+        ,{ "name":"next","img":"next.png","size":16,"client":"onNextRow","isNative":true }
+        ,{ "name":"previous","img":"prev.png","size":16,"client":"onPrevRow","isNative":true }
+        ]
+    ,"events":[]
+    ,"editable":true
+    ,"caption":"ingrediente(2)"
+    ,"autoFitColumns":true
+    ,"mode":"winX"
+    ,"top":"10px"
+    ,"left":"10px"
+    ,"askForSave":true
+    ,"width":"615px"
+    ,"resize":"both"
+    ,"height":"355px"
+    ,"primaryKey":"id"
+}
