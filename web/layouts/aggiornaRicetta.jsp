@@ -1,7 +1,7 @@
 <form name="creaRicettaForm" id="creaRicettaForm" method="POST" enctype="multipart/form-data">
           <hr size="1" id="nuovaRicettaPos">
           <br>
-          <h2 align="center" style="color: #4E73DF">NUOVA RICETTA</h2>
+          <h2 align="center" style="color: #4E73DF">AGGIORNA RICETTA</h2>
           <br>
           <!-- Nome ricetta -->
           <h4 align="center">Nome ricetta</h4>
@@ -65,4 +65,4 @@
           <br>
 
 
-          <input type="TEXT" class="btn btn-primary submitBtn" value="SALVA LA RICETTA" onclick="Liquid.insertRow(this)">
+          <input type="TEXT" class="btn btn-primary submitBtn" value="AGGIORNA LA RICETTA" onclick="Liquid.updateRow(this)">

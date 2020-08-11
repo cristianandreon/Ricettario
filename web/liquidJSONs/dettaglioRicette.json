@@ -21,8 +21,8 @@
         ]
     ,"layouts":[
         {    "name":"dettaglioRicetta"
-            ,"source":"url(./layouts/dettaglioRicetta.html)"
-            ,"sourceForInsert":"url(./layouts/nuovoDettaglioRicetta.html)"
+            ,"source":"url(./layouts/dettaglioRicetta.jsp)"
+            ,"sourceForInsert":"url(./layouts/nuovoDettaglioRicetta.jsp)"
             ,"nRows":-1
             ,"overflow":"auto"
             ,"rowPadding":4

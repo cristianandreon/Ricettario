@@ -7,7 +7,7 @@
         { "name":"id","label":"id","width":"!auto","remarks":"" }
         ,{ "name":"titolo","label":"titolo","requiredByDB":true,"width":"!auto","required":true,"remarks":"" }
         ,{ "name":"difficolta","label":"difficolta","requiredByDB":true,"width":"!auto","required":true,"remarks":"" }
-        ,{ "name":"dose","label":"dose","width":"!auto","remarks":"" }
+        ,{ "name":"dose","label":"dose","width":"!auto","remarks":"", "default":"dose" }
         ,{ "name":"tempoPreparazione","label":"tempoPreparazione","requiredByDB":true,"width":"!auto","required":true,"remarks":"" }
         ,{ "name":"svolgimento","label":"svolgimento","requiredByDB":true,"width":"!auto","required":true,"remarks":"" }
         ,{ "name":"dataAttivazione","label":"dataAttivazione","requiredByDB":true,"width":"!auto","required":true,"remarks":"" }
@@ -89,26 +89,6 @@
         }
     ]
     ,"grids":[
-        { "name":"grid"
-        ,"nRows":4
-        ,"nCols":3
-        ,"columns":[
-            { "name":"id","tooltip":"","label":"id","col":0,"row":0 }
-            ,{ "name":"titolo","tooltip":"","label":"titolo","col":1,"row":0 }
-            ,{ "name":"difficolta","tooltip":"","label":"difficolta","col":2,"row":0 }
-            ,{ "name":"dose","tooltip":"","label":"dose","col":0,"row":1 }
-            ,{ "name":"tempoPreparazione","tooltip":"","label":"tempoPreparazione","col":1,"row":1 }
-            ,{ "name":"svolgimento","tooltip":"","label":"svolgimento","col":2,"row":1 }
-            ,{ "name":"dataAttivazione","tooltip":"","label":"dataAttivazione","col":0,"row":2 }
-            ,{ "name":"immagine","tooltip":"","label":"immagine","col":1,"row":2 }
-            ,{ "name":"pdf","tooltip":"","label":"pdf","col":2,"row":2 }
-            ,{ "name":"visibile","tooltip":"","label":"visibile","col":0,"row":3 }
-            ,{ "name":"dataCaricamento","tooltip":"","label":"dataCaricamento","col":1,"row":3 }
-            ]
-        ,"tooltip":""
-        ,"icon":""
-        ,"title":"new grid 1"
-        }
     ]
     ,"layouts":[
         { "name":"Ricette"
@@ -116,9 +96,10 @@
         ,"rowPadding":4
         ,"backgroundColor":"white"
         ,"overflow":"auto"
-        ,"source":"url(./layouts/ricetta.jsp)"
         ,"tabVisible":true
+        ,"source":"url(./layouts/ricetta.jsp)"
         ,"sourceForInsert":"url(./layouts/nuovaRicetta.jsp)"
+        ,"sourceForUpdate":"url(./layouts/aggiornaRicetta.jsp)"
         }
     ]
     ,"commands":[

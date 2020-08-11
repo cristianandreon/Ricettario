@@ -11,8 +11,8 @@
         "sections":[
             { "name":"Categorie"
                 ,"commands":[
-                     { "name":"ricette", "server":"", "params":[], "client":"Liquid.startWinX('ricette',glRicetteJSON)" }
-                    ,{ "name":"ingredienti", "server":"", "params":[], "client":"Liquid.startWinX('ingredienti',glIngredientiJSON)" }
+                     { "name":"ricette", "server":"", "params":[], "client":"Liquid.startWinX('ricette',glRicetteJSON,'','maximized')" }
+                    ,{ "name":"ingredienti", "server":"", "params":[], "client":"Liquid.startWinX('ingredienti',glIngredientiJSON,'','maximized')" }
                     ,{ "name":"dettaglio ricette", "server":"", "params":[], "client":"Liquid.startWinX('dettaglioRicette',glDettaglioRicetteJSON)" }
                 ]
             }
