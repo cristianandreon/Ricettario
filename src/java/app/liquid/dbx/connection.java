@@ -14,7 +14,7 @@ public class connection {
    
     static String driver = "mariadb"; // "mysql", "mariadb", "oracle", "sqlserver"
     static String host = "localhost";
-    static String database = "rigoni";
+    static String database = "ricettario";
     static String user = "root";
     static String password = "root";
     static Class driverClass = null;

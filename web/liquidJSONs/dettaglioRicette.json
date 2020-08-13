@@ -1,6 +1,7 @@
 {    "build_comment":"create by liquid v. 1.16"
-    ,"database":"rigoni"
+    ,"database":"ricettario"
     ,"table":"contiene"
+    ,"schema":"ricettario"
     ,"primaryKey":"id"
     ,"columns":[
          { "name":"id", "visible":true }

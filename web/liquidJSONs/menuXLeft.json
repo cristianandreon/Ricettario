@@ -1,11 +1,9 @@
 { 
  "name":"leftMenu"
-,"tooltip":"Rigoni di Asiago"
 ,"type":"left"
 ,"width":"200px"
 ,"height":"100%"
 ,"resize":true
-,"caption":"Rigoni di Asiago"
 ,"accordions": [
     {   
         "sections":[
