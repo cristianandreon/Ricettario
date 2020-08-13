@@ -5,17 +5,17 @@
     ,"primaryKey":"id"
     ,"name":""
     ,"columns":[
-        { "name":"id","label":"id","width":"!auto" }
-        ,{ "name":"titolo","label":"titolo","requiredByDB":true,"width":"!auto","required":true,"remarks":"Titolo della ricetta" }
-        ,{ "name":"difficolta","label":"difficolta","requiredByDB":true,"width":"!auto","required":true }
-        ,{ "name":"dose","label":"dose","width":"!auto" }
-        ,{ "name":"tempoPreparazione","label":"tempoPreparazione","requiredByDB":true,"width":"!auto","required":true }
-        ,{ "name":"svolgimento","label":"svolgimento","requiredByDB":true,"width":"!auto","required":true }
-        ,{ "name":"dataAttivazione","label":"dataAttivazione","requiredByDB":true,"width":"!auto","required":true }
-        ,{ "name":"immagine","label":"immagine","width":"!auto" }
-        ,{ "name":"pdf","label":"pdf","width":"!auto" }
-        ,{ "name":"visibile","label":"visibile","width":"!auto" }
-        ,{ "name":"dataCaricamento","label":"dataCaricamento","width":"!auto" }
+        { "name":"id","remarks":"" }
+        ,{ "name":"titolo","required":true,"remarks":"" }
+        ,{ "name":"difficolta","required":true,"remarks":"" }
+        ,{ "name":"dose","remarks":"" }
+        ,{ "name":"tempoPreparazione","required":true,"remarks":"" }
+        ,{ "name":"svolgimento","required":true,"remarks":"" }
+        ,{ "name":"dataAttivazione","required":true,"remarks":"" }
+        ,{ "name":"immagine","remarks":"" }
+        ,{ "name":"pdf","remarks":"" }
+        ,{ "name":"visibile","remarks":"" }
+        ,{ "name":"dataCaricamento","remarks":"" }
         ]
     ,"foreignTables":[
         { "name":"dettaglio ricetta"
@@ -28,45 +28,13 @@
             { "primaryKey":"id"
             ,"name":""
             ,"columns":[
-                { "name":"id"
-                ,"visible":true
-                },
-                { "name":"idRicetta"
-                ,"label":"idRicetta"
-                ,"width":"!auto"
-                ,"required":true
-                },
-                { "name":"idIngrediente"
-                ,"label":"idIngrediente"
-                ,"width":"!auto"
-                ,"required":true
-                },
-                { "name":"ingrediente.nomeIngrediente"
-                ,"label":"Nome ingrediente"
-                ,"foreignTable":"ingrediente"
-                ,"foreignColumn":"id"
-                ,"column":"idIngrediente"
-                ,"options":
-                    { "columns":["nomeIngrediente"
-                    ]
-                    ,"lookupField":"nomeIngrediente"
-                    ,"autoSelect":false
-                    ,"commandBarVisible":false
-                    ,"targetColumn":"ingrediente.nomeIngrediente"
-                    ,"width":"250px"
-                    ,"navVisible":false
-                    ,"idColumn":"idIngrediente"
-                    ,"status":"closed"
-                    ,"height":"200"
-                    }
-                ,"lookup":"ingrediente"
-                },
-                { "name":"quantita"
-                ,"label":"quantita"
-                ,"width":"!auto"
-                ,"required":true
-                }
-            ]
+                { "name":"id","visible":true }
+                ,{ "name":"idRicetta","required":true }
+                ,{ "name":"idIngrediente","required":true }
+                ,{ "name":"ingrediente.nomeIngrediente","label":"Nome ingrediente","foreignTable":"ingrediente","foreignColumn":"id","column":"idIngrediente","options":{ "columns":["nomeIngrediente"],"lookupField":"nomeIngrediente","autoSelect":false,"commandBarVisible":false,"targetColumn":"ingrediente.nomeIngrediente","width":"250px","navVisible":false,"idColumn":"idIngrediente","status":"closed","height":"200" }
+                ,"lookup":"ingrediente" }
+                ,{ "name":"quantita","required":true }
+                ]
             ,"layouts":[
                 { "name":"Ingredienti"
                 ,"nRows":-1
@@ -165,13 +133,12 @@
     ,"editType":""
     ,"navVisible":true
     ,"autoSizeColumns":false
-    ,"height":"315px"
+    ,"height":"255px"
     ,"lookupField":"1"
     ,"skipHeaderOnAutoSize":false
     ,"cache":false
     ,"currentForeignTable":""
     ,"modeless":false
-    ,"metadataTime":8
     ,"controlId":"ricette"
     ,"left":"10px"
     ,"layoutsTabVisible":false
@@ -190,12 +157,11 @@
     ,"headerMenu":true
     ,"listTabVisible":false
     ,"owner":"com.liquid.event"
-    ,"loadingMessage":""
     ,"editable":true
     ,"filtersSearch":false
     ,"rowDeselection":false
     ,"createTableIfMissing":false
     ,"listTabTitle":"Lista"
-    ,"width":"300px"
+    ,"width":"240px"
     ,"resize":"both"
 }
