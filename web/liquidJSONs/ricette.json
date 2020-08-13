@@ -7,7 +7,7 @@
         { "name":"id","label":"id","width":"!auto","remarks":"" }
         ,{ "name":"titolo","label":"titolo","requiredByDB":true,"width":"!auto","required":true,"remarks":"" }
         ,{ "name":"difficolta","label":"difficolta","requiredByDB":true,"width":"!auto","required":true,"remarks":"" }
-        ,{ "name":"dose","label":"dose","width":"!auto","remarks":"", "default":"dose" }
+        ,{ "name":"dose","label":"dose","width":"!auto","remarks":"" }
         ,{ "name":"tempoPreparazione","label":"tempoPreparazione","requiredByDB":true,"width":"!auto","required":true,"remarks":"" }
         ,{ "name":"svolgimento","label":"svolgimento","requiredByDB":true,"width":"!auto","required":true,"remarks":"" }
         ,{ "name":"dataAttivazione","label":"dataAttivazione","requiredByDB":true,"width":"!auto","required":true,"remarks":"" }
@@ -25,8 +25,10 @@
         ,"column":"id"
         ,"options":
             { "columns":[
-                { "name":"id", "visible":true }
-                ,{ "name":"idRicetta"
+                { "name":"id"
+                ,"visible":true
+                },
+                { "name":"idRicetta"
                 ,"label":"idRicetta"
                 ,"width":"!auto"
                 ,"required":true
@@ -70,6 +72,7 @@
                 ,"source":"url(./layouts/dettaglioRicetta.jsp)"
                 ,"title":""
                 ,"sourceForInsert":"url(./layouts/nuovoDettaglioRicetta.jsp)"
+                ,"sourceForUpdate":"url(./layouts/aggiornaDettaglioRicetta.jsp)"
                 }
             ]
             ,"commands":[
@@ -83,23 +86,22 @@
                 ]
             ,"autoSelect":true
             ,"editable":true
-            ,"autoSizeColumns":true
             ,"currentTab":"Ingredienti"
+            ,"autoSizeColumns":true
             }
         }
     ]
-    ,"grids":[
-    ]
+    ,"grids":[]
     ,"layouts":[
         { "name":"Ricette"
         ,"nRows":-1
+        ,"sourceForUpdate":"url(./layouts/aggiornaRicetta.jsp)"
         ,"rowPadding":4
         ,"backgroundColor":"white"
         ,"overflow":"auto"
-        ,"tabVisible":true
         ,"source":"url(./layouts/ricetta.jsp)"
+        ,"tabVisible":true
         ,"sourceForInsert":"url(./layouts/nuovaRicetta.jsp)"
-        ,"sourceForUpdate":"url(./layouts/aggiornaRicetta.jsp)"
         }
     ]
     ,"commands":[
@@ -122,13 +124,13 @@
     ,"editType":""
     ,"navVisible":true
     ,"autoSizeColumns":false
-    ,"height":"475px"
-    ,"lookupField":""
+    ,"height":"415px"
+    ,"lookupField":"1"
     ,"skipHeaderOnAutoSize":false
     ,"cache":false
     ,"currentForeignTable":""
     ,"modeless":false
-    ,"metadataTime":17
+    ,"metadataTime":8
     ,"controlId":"ricette"
     ,"left":"10px"
     ,"layoutsTabVisible":true
@@ -153,6 +155,6 @@
     ,"rowDeselection":false
     ,"createTableIfMissing":false
     ,"listTabTitle":"Lista"
-    ,"width":"460px"
+    ,"width":"400px"
     ,"resize":"both"
 }

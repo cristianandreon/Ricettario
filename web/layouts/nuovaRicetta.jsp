@@ -65,4 +65,5 @@
           <br>
 
 
-          <input type="TEXT" class="btn btn-primary submitBtn" value="SALVA LA RICETTA" onclick="Liquid.insertRow(this)">
+          <input type="BUTTON" class="btn btn-primary submitBtn" value="SALVA LA RICETTA" onclick="Liquid.insertRow(this)">
+          <input type="BUTTON" class="btn btn-danger" onclick="Liquid.rollback(this);" style="margin-left: 5%;" value="ANNULLA">

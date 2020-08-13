@@ -65,4 +65,5 @@
           <br>
 
 
-          <input type="TEXT" class="btn btn-primary submitBtn" value="AGGIORNA LA RICETTA" onclick="Liquid.updateRow(this)">
+          <input type="BUTTON" class="btn btn-primary submitBtn" value="AGGIORNA LA RICETTA" onclick="Liquid.updateRow(this)">
+          <input type="BUTTON" class="btn btn-danger" onclick="Liquid.rollback(this);" style="margin-left: 5%;" value="ANNULLA">
