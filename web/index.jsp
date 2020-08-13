@@ -66,6 +66,9 @@
             Liquid.startNavigatorsBar("topNavigationBar");
             Liquid.startNavigatorsBar("bottomNavigationBar");
             
+            Liquid.captionIconFilter = "invert(1)";
+            Liquid.captionIconSize = 16;
+            
         </script>
 
         <%
