@@ -14,8 +14,9 @@
                     ,{ "name":"dettaglio ricette", "server":"", "params":[], "client":"Liquid.startWinX('dettaglioRicette',glDettaglioRicetteJSON)" }
                 ]
             }
-            ,{ "name":"Sostenibilit&agrave;"
+            ,{ "name":"Login"
                 ,"commands":[
+                     { "name":"esci", "server":"com.liquid.login.logout", "params":[], "client":"onLogout" }
                 ]
             }
         ]

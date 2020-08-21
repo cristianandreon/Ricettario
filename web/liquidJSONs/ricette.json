@@ -40,11 +40,11 @@
                 ,"nRows":-1
                 ,"tooltip":""
                 ,"icon":""
-                ,"footer":"url(./layouts/calceDettaglioRicetta.jsp)"
-                ,"sourceForInsert":"url(./layouts/nuovoDettaglioRicetta.jsp)"
                 ,"sourceForUpdate":"url(./layouts/aggiornaDettaglioRicetta.jsp)"
+                ,"footer":"url(./layouts/calceDettaglioRicetta.jsp)"
                 ,"source":"url(./layouts/dettaglioRicetta.jsp)"
                 ,"title":""
+                ,"sourceForInsert":"url(./layouts/nuovoDettaglioRicetta.jsp)"
                 }
             ]
             ,"commands":[
@@ -53,7 +53,7 @@
                 ,{ "name":"delete","hidden":true }
                 ]
             ,"rowSelection":""
-            ,"commandBarVisible":true
+            ,"commandBarVisible":false
             ,"singleClickEdit":false
             ,"gridsTabVisible":true
             ,"checkboxSelection":false
@@ -73,7 +73,7 @@
             ,"listTabVisible":false
             ,"autoSizeColumns":false
             ,"navVisible":true
-            ,"height":"783px"
+            ,"height":"564px"
             ,"lookupField":""
             ,"owner":"com.liquid.event"
             ,"skipHeaderOnAutoSize":false
@@ -89,7 +89,8 @@
             ,"listTabTitle":"Lista"
             ,"left":""
             ,"layoutsTabVisible":false
-            ,"width":"1582px"
+            ,"captionVisible":true
+            ,"width":"667px"
             ,"resize":"linked"
             ,"chartsTabVisible":true
             ,"status":""
@@ -100,19 +101,19 @@
     ,"layouts":[
         { "name":"Ricette"
         ,"nRows":-1
-        ,"header":"url(./layouts/intestazioneRicetta.jsp)"
+        ,"rowPadding":4
+        ,"backgroundColor":"white"
         ,"headerForInsert":"url(./layouts/intestazioneRicetta-I.jsp)"
         ,"headerForUpdate":"url(./layouts/intestazioneRicetta-U.jsp)"
         ,"footer":"url(./layouts/calceRicetta.jsp)"
-        ,"footerForInsert":"url(./layouts/calceRicetta-I.jsp)"
-        ,"footerForUpdate":"url(./layouts/calceRicetta-U.jsp)"
         ,"source":"url(./layouts/ricetta.jsp)"
-        ,"sourceForInsert":"url(./layouts/nuovaRicetta.jsp)"
-        ,"sourceForUpdate":"url(./layouts/aggiornaRicetta.jsp)"
-        ,"rowPadding":4
-        ,"backgroundColor":"white"
-        ,"overflow":"auto"
+        ,"footerForInsert":"url(./layouts/calceRicetta-I.jsp)"
         ,"tabVisible":true
+        ,"footerForUpdate":"url(./layouts/calceRicetta-U.jsp)"
+        ,"sourceForUpdate":"url(./layouts/aggiornaRicetta.jsp)"
+        ,"overflow":"auto"
+        ,"header":"url(./layouts/intestazioneRicetta.jsp)"
+        ,"sourceForInsert":"url(./layouts/nuovaRicetta.jsp)"
         }
     ]
     ,"commands":[
@@ -132,7 +133,7 @@
     ,"editType":""
     ,"navVisible":false
     ,"autoSizeColumns":false
-    ,"height":"634px"
+    ,"height":"526px"
     ,"lookupField":"1"
     ,"skipHeaderOnAutoSize":false
     ,"cache":false
@@ -152,9 +153,10 @@
     ,"autoSelect":true
     ,"rowMultiSelectWithClick":false
     ,"resetSelectionOnRowChange":false
-    ,"top":"10px"
+    ,"top":"18px"
     ,"headerMenu":true
     ,"listTabVisible":false
+    ,"class":"ricette"
     ,"owner":"com.liquid.event"
     ,"editable":true
     ,"filtersSearch":false
@@ -162,7 +164,6 @@
     ,"createTableIfMissing":false
     ,"listTabTitle":"Lista"
     ,"captionVisible":false
-    ,"width":"659px"
+    ,"width":"599px"
     ,"resize":"both"
-    ,"class":"ricette"    
 }
