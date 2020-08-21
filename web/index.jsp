@@ -31,6 +31,13 @@
         <!-- Codice Framework Liquid -->
         <!-----------------------------> 
 
+        <%  
+            
+            com.liquid.connection.addLiquidDBConnection( "mariadb", "localhost", "3307", "ricettario", "root", "root");
+            com.liquid.connection.addLiquidDBConnection( "mysql", "localhost", "3306", "ricettario", "liquid", "liquid");
+            
+         %>
+         
         
         <!-- Start Liquid Engine -->
         <%@ include file="/liquid/liquidXHeader.jsp" %>
@@ -40,6 +47,7 @@
 
 
         <%  
+            
             //
             // Modalità progettazione : 
             String GenesisToken = workspace.enableProjectMode();
@@ -52,11 +60,11 @@
             // workspace.addToBlackList("*","*","cfg");
             
             // Definizione dati di login
-            login.driver = "mariadb";
-            login.host = "localhost";
-            login.port = "3307";
-            login.user = "root";
-            login.password = "root";
+            // login.driver = "mariadb";
+            // login.host = "localhost";
+            // login.port = "3307";
+            // login.user = "root";
+            // login.password = "root";
             login.database = "ricettario";
             login.schema = "ricettario";
             login.table = "login_users";

@@ -94,7 +94,7 @@
         <br/>
     </div>
     <div id="registerDiv" style="display:none">
-        <table border=0 cellspacing=10 cellpadding=10 style="background-color: #f4f6f785; font-family: verdana; font-size:20px; padding:0px; width:500px; height:auto; font-size:9pt; table-layout:auto; border:1px solid lightgray;">
+        <table border=0 cellspacing=10 cellpadding=10 style="background-color: darkRed; font-family: verdana; font-size:20px; padding:0px; width:500px; height:auto; font-size:9pt; table-layout:auto; border:1px solid lightgray;">
             <tr>
                 <td colspan="2" style="height: 50px;font-size:20px;vertical-align: baseline;text-align: center;background-color: #03a9f41a;">Register user / Recovery password</td>
             </tr>
