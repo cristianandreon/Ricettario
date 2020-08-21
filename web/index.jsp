@@ -168,13 +168,93 @@
                   <div id="leftMenu" style="height:100%; float:left;"></div>
                 </td>
                 <td colspan="1" style="width:0%">
-                    <div id="topNavigationBar" style="width:100%; height:30px; border:1px solid lightgray"></div>
-                    <div id="WinXContainer" 
-                         class="liquidWinXContainer" 
-                         ondrop="Liquid.onDrop(event)" 
-                         ondragover="Liquid.onAllowDrop(event);" 
-                         style="width:100%; height:calc(100% - 74px); border:1px solid lightgray"></div>
-                    <div id="bottomNavigationBar" style="width:100%; height:40px; border:1px solid lightgray"></div>
+                    <!-- <div id="topNavigationBar" style="width:100%; height:30px; border:1px solid lightgray"></div> -->
+                    
+                    <div id="content" style="height: 100%;">
+
+
+                        <!-- Topbar -->
+                        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                        <!-- Sidebar Toggle (Topbar) -->
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                            <i class="fa fa-bars"></i>
+                        </button>
+
+
+                        <!-- Topbar Navbar -->
+                        <ul class="navbar-nav ml-auto">
+
+                            <div class="topbar-divider d-none d-sm-block"></div>
+
+                            <!-- Nav Item - User Information -->
+                            <li class="nav-item dropdown no-arrow">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Rigoni di Asiago - Admin</span>
+                                </a>
+                                <!-- Dropdown - User Information -->
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="logout.php" data-toggle="modal" data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Logout
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+                    <!-- End of Topbar -->
+
+                    <!-- Begin Page Content -->
+                    <div class="container-fluid">
+
+                        <!-- Page Heading -->
+                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                            <h1 class="h3 mb-0 text-gray-800">GESTIONE CONTENUTI</h1>
+                        </div>
+
+                        <!-- Content Row -->
+                        <div class="row" style="height: -webkit-fill-available;">
+
+                            <!-- Earnings (Monthly) Card Example -->
+                            <div class="col-xl-6 col-md-12 mb-4">
+                                <div id="WinXContainer1" class="liquidWinXContainer card border-left-primary shadow h-100 py-2" style="overflow:hidden; min-height: 600px; border-left: .25rem solid #4e73df!important;"></div>
+                            </div>
+
+                            <!-- Sostenibilità -->
+                            <div class="col-xl-6 col-md-12 mb-4">
+                                <div id="WinXContainer2" class="liquidWinXContainer card border-left-primary shadow h-100 py-2" style="overflow:hidden; min-height: 600px; border-left: .25rem solid darkcyan!important;">
+                                    
+                                </div>
+                            </div>
+
+                            <!-- Novita SKiro -->
+                            <div class="col-xl-6 col-md-12 mb-4">
+                                <div id="WinXContainer3" class="liquidWinXContainer card border-left-primary shadow h-100 py-2" style="overflow:hidden; min-height: 600px; border-left: .25rem solid darkred!important;"></div>                                
+                            </div>
+
+                            <div class="row">
+                            </div>
+
+
+                        </div>
+                        <!-- /.container-fluid -->
+
+                    </div>
+                    <!-- End of Main Content -->
+
+                    <!-- Footer -->
+                    <footer class="sticky-footer bg-white">
+                        <div class="container my-auto">
+                            <div class="copyright text-center my-auto">
+                                <span>Powered by Mocchi's Srl</span>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- End of Footer -->
+
+                </div>
                 </td>
             </tr>
         </table>

@@ -7,13 +7,13 @@
         ,{ "name":"nomeIngrediente","label":"nomeIngrediente","requiredByDB":true,"width":"!auto","required":true,"remarks":"" }
         ]
     ,"commands":[
-        { "name":"insert","rollback":"Annulla","server":"com.liquid.event.insertRow","img":"add.png","size":20,"rollbackImg":"cancel.png","text":"Aggiungi","isNative":true,"labels":["Salva"] }
-        ,{ "name":"update","rollback":"Annulla","server":"com.liquid.event.updateRow","img":"update.png","size":20,"rollbackImg":"cancel.png","text":"Modifica","isNative":true,"labels":["Salva"] }
-        ,{ "name":"delete","rollback":"Annulla","server":"com.liquid.event.deleteRow","img":"delete.png","size":20,"rollbackImg":"cancel.png","text":"Cancella","isNative":true,"labels":["Conferma"] }
-        ,{ "name":"copy","img":"copy.png","size":16,"client":"onCopy","isNative":true }
-        ,{ "name":"paste","img":"paste.png","size":16,"client":"onPaste","sync":true,"isNative":true }
-        ,{ "name":"next","img":"next.png","size":16,"client":"onNextRow","isNative":true }
-        ,{ "name":"previous","img":"prev.png","size":16,"client":"onPrevRow","isNative":true }
+        { "name":"insert" }
+        ,{ "name":"update" }
+        ,{ "name":"delete" }
+        ,{ "name":"copy" }
+        ,{ "name":"paste" }
+        ,{ "name":"next" }
+        ,{ "name":"previous" }
         ]
     ,"events":[]
     ,"editable":true

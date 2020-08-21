@@ -16,13 +16,16 @@
                 ,"commandBarVisible":false,"navVisible":false, "autoSelect":false
                 ,"status":"closed","width":"250px","height":"200"
                 ,"columns":[ "nomeIngrediente" ]
+                ,"allowInsert":true
             }
         }
         ,{ "name":"quantita","label":"quantita","width":"!auto","required":true}
         ]
     ,"layouts":[
         {    "name":"dettaglioRicetta"
+            ,"header":"url(./layouts/intestazioneRicetta.jsp)"
             ,"source":"url(./layouts/dettaglioRicetta.jsp)"
+            ,"footer":"url(./layouts/calceRicetta.jsp)"
             ,"sourceForInsert":"url(./layouts/nuovoDettaglioRicetta.jsp)"
             ,"sourceForUpdate":"url(./layouts/aggiornaDettaglioRicetta.jsp)"
             ,"nRows":-1
@@ -34,13 +37,9 @@
         ]        
     ,"commands":[
         { "name":"insert" }
-        ,{ "name":"update"}
-        ,{ "name":"delete" }
-        ,{ "name":"copy" }
-        ,{ "name":"paste" }
-        ,{ "name":"next" }
-        ,{ "name":"previous" }
-        ]
+        ,{ "name":"update","hidden":true }
+        ,{ "name":"delete","hidden":true }
+         ]
     ,"events":[]
     ,"editable":true
     ,"caption":"dettaglio ricette"

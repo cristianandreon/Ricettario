@@ -31,7 +31,7 @@
                 { "name":"id","visible":true }
                 ,{ "name":"idRicetta","required":true }
                 ,{ "name":"idIngrediente","required":true }
-                ,{ "name":"ingrediente.nomeIngrediente","label":"Nome ingrediente","foreignTable":"ingrediente","foreignColumn":"id","column":"idIngrediente","options":{ "columns":["nomeIngrediente"],"lookupField":"nomeIngrediente","autoSelect":false,"commandBarVisible":false,"targetColumn":"ingrediente.nomeIngrediente","width":"250px","navVisible":false,"idColumn":"idIngrediente","status":"closed","height":"200" }
+                ,{ "name":"ingrediente.nomeIngrediente","label":"Nome ingrediente","foreignTable":"ingrediente","foreignColumn":"id","column":"idIngrediente","options":{ "columns":["nomeIngrediente"],"lookupField":"nomeIngrediente","autoSelect":false,"commandBarVisible":false,"targetColumn":"ingrediente.nomeIngrediente","width":"250px","allowInsert":true,"navVisible":false,"idColumn":"idIngrediente","status":"closed","height":"200" }
                 ,"lookup":"ingrediente" }
                 ,{ "name":"quantita","required":true }
                 ]
@@ -40,20 +40,17 @@
                 ,"nRows":-1
                 ,"tooltip":""
                 ,"icon":""
+                ,"footer":"url(./layouts/calceDettaglioRicetta.jsp)"
+                ,"sourceForInsert":"url(./layouts/nuovoDettaglioRicetta.jsp)"
                 ,"sourceForUpdate":"url(./layouts/aggiornaDettaglioRicetta.jsp)"
                 ,"source":"url(./layouts/dettaglioRicetta.jsp)"
                 ,"title":""
-                ,"sourceForInsert":"url(./layouts/nuovoDettaglioRicetta.jsp)"
                 }
             ]
             ,"commands":[
                 { "name":"insert" }
-                ,{ "name":"update" }
-                ,{ "name":"delete" }
-                ,{ "name":"copy" }
-                ,{ "name":"paste" }
-                ,{ "name":"next" }
-                ,{ "name":"previous" }
+                ,{ "name":"update","hidden":true }
+                ,{ "name":"delete","hidden":true }
                 ]
             ,"rowSelection":""
             ,"commandBarVisible":true
@@ -103,23 +100,25 @@
     ,"layouts":[
         { "name":"Ricette"
         ,"nRows":-1
+        ,"header":"url(./layouts/intestazioneRicetta.jsp)"
+        ,"headerForInsert":"url(./layouts/intestazioneRicetta-I.jsp)"
+        ,"headerForUpdate":"url(./layouts/intestazioneRicetta-U.jsp)"
+        ,"footer":"url(./layouts/calceRicetta.jsp)"
+        ,"footerForInsert":"url(./layouts/calceRicetta-I.jsp)"
+        ,"footerForUpdate":"url(./layouts/calceRicetta-U.jsp)"
+        ,"source":"url(./layouts/ricetta.jsp)"
+        ,"sourceForInsert":"url(./layouts/nuovaRicetta.jsp)"
         ,"sourceForUpdate":"url(./layouts/aggiornaRicetta.jsp)"
         ,"rowPadding":4
         ,"backgroundColor":"white"
         ,"overflow":"auto"
-        ,"source":"url(./layouts/ricetta.jsp)"
         ,"tabVisible":true
-        ,"sourceForInsert":"url(./layouts/nuovaRicetta.jsp)"
         }
     ]
     ,"commands":[
         { "name":"insert" }
         ,{ "name":"update" }
         ,{ "name":"delete" }
-        ,{ "name":"copy" }
-        ,{ "name":"paste" }
-        ,{ "name":"next" }
-        ,{ "name":"previous" }
         ]
     ,"events":[]
     ,"createIfMissing":true
@@ -129,11 +128,11 @@
     ,"pageSize":0
     ,"autoFitColumns":false
     ,"mode":"winX"
-    ,"documentsTabVisible":true
+    ,"documentsTabVisible":false
     ,"editType":""
-    ,"navVisible":true
+    ,"navVisible":false
     ,"autoSizeColumns":false
-    ,"height":"255px"
+    ,"height":"634px"
     ,"lookupField":"1"
     ,"skipHeaderOnAutoSize":false
     ,"cache":false
@@ -142,12 +141,12 @@
     ,"controlId":"ricette"
     ,"left":"10px"
     ,"layoutsTabVisible":false
-    ,"chartsTabVisible":true
+    ,"chartsTabVisible":false
     ,"status":""
     ,"rowSelection":""
-    ,"commandBarVisible":true
+    ,"commandBarVisible":false
     ,"singleClickEdit":false
-    ,"gridsTabVisible":true
+    ,"gridsTabVisible":false
     ,"checkboxSelection":false
     ,"currentTab":"Ricette"
     ,"autoSelect":true
@@ -162,6 +161,8 @@
     ,"rowDeselection":false
     ,"createTableIfMissing":false
     ,"listTabTitle":"Lista"
-    ,"width":"240px"
+    ,"captionVisible":false
+    ,"width":"659px"
     ,"resize":"both"
+    ,"class":"ricette"    
 }
