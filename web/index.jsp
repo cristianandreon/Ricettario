@@ -36,7 +36,7 @@
             com.liquid.connection.addLiquidDBConnection( "mariadb", "localhost", "3307", "ricettario", "root", "root");
             com.liquid.connection.addLiquidDBConnection( "mysql", "localhost", "3306", "ricettario", "liquid", "liquid");
             
-         %>
+        %>
          
         
         <!-- Start Liquid Engine -->
@@ -172,7 +172,7 @@
             background: #821b23 !important;
         }
         .ag-theme-balham .ag-row-hover { background-color: #f3a199 !important; }
-        .ag-theme-balham .ag-row-odd { background-color:rgb(247 247 247); }
+        .ag-theme-balham .ag-row-odd { background-color: rgb(247,247,247); }
         .ag-theme-balham .ag-row-even { }
         .ag-theme-balham .ag-row-selected { background-color: #9F1621 !important; border-color: #f6f6f6 !important; color:whitesmoke !important; 
        
@@ -202,18 +202,18 @@
             
 
 
-      <!-- Bootstrap core JavaScript-->
-      <script src="./vendor/jquery/jquery.min.js"></script>
-      <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JavaScript-->
+        <script src="./vendor/jquery/jquery.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-      <!-- Core plugin JavaScript-->
-      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-      <!-- Custom scripts for all pages-->
-      <script src="./vendor/js/sb-admin-2.min.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="./vendor/js/sb-admin-2.min.js"></script>
 
 
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 
       
